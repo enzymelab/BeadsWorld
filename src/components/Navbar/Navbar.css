@@ -3,40 +3,182 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: -moz-radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
 
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    padding: 1rem 2rem;
+}
 
-    /* opera 11.10+ */
-    background: -o-radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
-
-    /* ie 10+ */
-    background: -ms-radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
-
-    /* global 92%+ browsers support */
-    background: radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
-
+.app_navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .app_navbar-logo img {
-    width: 50%;
-    box-shadow: 0 0 50px 15px #48abe0;
-    border-radius: 10px;
+    width: 250px;
 }
 
-.app_navbar-links {}
+.app_navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
 
-@media screen and (max-width:1000px) {
-    .app_navbar-logo img {
-        width: 80%;
+.app_navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app_navbar-links li:hover {
+    color: var(--color-gray);
+}
+
+.app_navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app_navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+
+.app_navbar-login button:hover {
+    background-color: var(--color-hover);
+
+}
+
+.app_navbar-login button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: var(--color-logo);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    left: 1153px;
+    top: 55px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.app_navbar-login div {
+    width: 1px;
+    height: 40px;
+    background: var(--color-grey);
+}
+
+.app_navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.app_navbar-menu svg {
+    cursor: pointer;
+}
+
+.app_navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+
+.app_navbar-menu_container li {
+    margin: 1rem 0;
+}
+
+.app_navbar-menu_container-links_sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .app_navbar-links {
+        display: none;
+    }
+
+    .app_navbar-menu {
+        display: flex;
     }
 }
 
-@media screen and (max-width:700px) {
-    .app_navbar-logo img {
-        width: 50%;
+@media screen and (max-width: 850px) {
+    .app_navbar {
+        padding: 2rem 4rem;
+    }
+
+    .app_navbar-menu_container {
+        top: 20px;
+        list-style: none;
+        background-color: white;
+    }
+
+    .app_navbar-login button:hover {
+        background-color: rgb(53, 214, 48);
     }
 }
 
-    {}
+@media screen and (max-width: 550px) {
+    .app_navbar {
+        padding: 2rem;
+    }
+
+    .app_navbar-login {
+        display: none;
+    }
+
+    .app_navbar-menu_container {
+        top: 20px;
+        list-style: none;
+        background-color: white;
+    }
+
+    .app_navbar-menu_container-links li {
+
+        cursor: pointer;
+    }
+
+    .app_navbar-menu_container-links a {
+
+        text-decoration: none;
+        transition: 0.5s ease;
+    }
+
+    .app_navbar-menu_container-links_sign {
+        display: block;
+    }
+
+    .app_navbar-menu_container button {
+        padding: 0.5rem 1rem;
+        color: black;
+        background-color: var(--color-logo);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        left: 1153px;
+        top: 55px;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+}

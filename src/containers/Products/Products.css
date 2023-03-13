@@ -1,0 +1,92 @@
+.app_product-necklace,
+.app_product-bracelet,
+.app_product-charm,
+.app_product-set {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    padding: 0 5rem 0 5rem;
+
+}
+
+.app_product img {
+    height: 300px;
+    margin-left: 5rem;
+}
+
+.app_product p {
+    font-size: 20px;
+    margin-left: 5rem;
+}
+
+.app_product_title {
+    background: var(--gradient-text);
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.app_product-necklace_title,
+.app_product-bracelet_title,
+.app_product-charm_title,
+.app_product-set_title {
+    font-size: 20px;
+    margin: 1rem 0 1rem 0;
+    padding: 0 2rem;
+    border-bottom: 1px solid black;
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .app_product-necklace,
+    .app_product-bracelet,
+    .app_product-charm,
+    .app_product-set {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .app_product img,
+    .app_product p {
+        margin-left: 0;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app_product_title {
+        font-size: 20px;
+    }
+
+    .app_product img {
+        margin-left: 0;
+        width: 150px;
+        height: 150px;
+    }
+
+    .app_product p {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .app_product-necklace,
+    .app_product-bracelet,
+    .app_product-charm {
+        width: 100%;
+        /* padding: 1rem 2rem; */
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .app_product-necklace_title,
+    .app_product-bracelet_title,
+    .app_product-charm_title {
+        font-size: 18px;
+
+    }
+}

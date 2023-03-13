@@ -1,0 +1,47 @@
+.app_beadstype {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 2rem;
+}
+
+.app_beadstype img {
+    width: 250px;
+}
+
+.app_beadstype p {
+    font-size: 20px;
+}
+
+/* .app_mizhu img,
+.app_crystal img,
+.app_glass img,
+.app_metal img,
+.app_pearl img,
+.app_wood img {
+    width: 250px;
+} */
+
+@media screen and (max-width: 850px) {
+    .app_beadstype {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app_beadstype img {
+        width: 150px;
+    }
+
+    .app_beadstype p {
+        font-size: 14px;
+    }
+
+    .app_beadstype {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

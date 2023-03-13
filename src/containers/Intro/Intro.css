@@ -1,0 +1,41 @@
+.app_intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 0rem 2rem;
+    background: var(--gradient-bar);
+    /* background-image: url("./bg.jpg"); */
+}
+
+
+.app_intro img {
+    width: 30px;
+}
+
+.app_intro p {
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+.app_facebook,
+.app_twitter,
+.app_youtube,
+.app_instagram {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .app_intro {
+        justify-content: center;
+    }
+
+    .app_intro p {
+        display: none;
+    }
+}
