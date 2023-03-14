@@ -14,11 +14,11 @@ const Navbar = () => {
                 <img src={images.logo1} alt="app logo" />
             </div>
             <ul className="app_navbar-links">
-                <li className='p_opensans'><a href="#home">Home</a></li>
+                <li className='p_opensans'><a href="/">Home</a></li>
                 <li className='p_opensans'><a href="#about">About</a></li>
                 <li className='p_opensans'><a href="#beadstype">Beads Type</a></li>
                 <li className='p_opensans'><a href="#product">Beads Product</a></li>
-                <li className='p_opensans'><a href="#contact">Contact Us</a></li>
+                <li className='p_opensans'><a href="/contact">Contact Us</a></li>
             </ul>
             <div className="app_navbar-login">
                 <a href="#login" className='p_opensans'>
@@ -42,11 +42,11 @@ const Navbar = () => {
                         </div>
                         <div className="app_navbar-menu_container-links">
 
-                            <li className='p_opensans'><a href="#home">Home</a></li>
+                            <li className='p_opensans'><a href="/">Home</a></li>
                             <li className='p_opensans'><a href="#about">About</a></li>
                             <li className='p_opensans'><a href="#beadstype">Beads Type</a></li>
                             <li className='p_opensans'><a href="#product">Beads Product</a></li>
-                            <li className='p_opensans'><a href="#contact">Contact Us</a></li>
+                            <li className='p_opensans'><a href="/contact">Contact Us</a></li>
 
                             <div className="app_navbar-menu_container-links_sign">
                                 <button type="button">Sign up</button>

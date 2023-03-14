@@ -10,22 +10,16 @@ import Products from './containers/Products/Products';
 import Intro from './containers/Intro/Intro';
 import Header from './components/Header/Header';
 import Footer from './containers/footer/footer';
-
+import Contact from './pages/contact/contact';
+import { Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <div className='app'>
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <Header />
-        <AboutUs />
-        <BeadsType />
-        <Products />
-        <Intro />
-        <Footer />
-      </div>
-
+      <Navbar />
+      <Routes>
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/' element={<><AboutUs /><Header /><BeadsType /><Products /><Intro /><Footer /></>} />
+      </Routes>
     </div>
   )
 }
