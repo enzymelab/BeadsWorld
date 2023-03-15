@@ -57,7 +57,7 @@ a {
   }
 }
 
-.gradient-bg {
+.gradient_text {
   background: -moz-radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
 
   /* safari 5.1+,chrome 10+ */

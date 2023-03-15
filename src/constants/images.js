@@ -19,6 +19,7 @@ import greenbeadsnecklace from '../assets/greenbeadsnecklace.jpg';
 import pearlbracelet from '../assets/pearlbracelet.jpg';
 import instagramlogo from '../assets/instagramlogo.png';
 import set from '../assets/set.jpg';
+import blackpearlset from '../assets/blackpearlset.jpg';
 
 
 export default {
@@ -43,4 +44,5 @@ export default {
     pearlbracelet,
     instagramlogo,
     set,
+    blackpearlset,
 };

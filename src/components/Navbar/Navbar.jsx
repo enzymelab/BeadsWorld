@@ -15,17 +15,17 @@ const Navbar = () => {
             </div>
             <ul className="app_navbar-links">
                 <li className='p_opensans'><a href="/">Home</a></li>
-                <li className='p_opensans'><a href="#about">About</a></li>
-                <li className='p_opensans'><a href="#beadstype">Beads Type</a></li>
+                <li className='p_opensans'><a href="#about">DIY Ideas</a></li>
+                <li className='p_opensans'><a href="/shop">Beads Type</a></li>
                 <li className='p_opensans'><a href="#product">Beads Product</a></li>
                 <li className='p_opensans'><a href="/contact">Contact Us</a></li>
             </ul>
             <div className="app_navbar-login">
-                <a href="#login" className='p_opensans'>
+                <a href="/signup" className='p_opensans'>
                     <button type="button">Sign up</button>
                 </a>
                 <div />
-                <a href="/" className='p_opensans'>
+                <a href="/signin" className='p_opensans'>
                     <button type="button">Sign in</button>
                 </a>
             </div>
@@ -37,14 +37,16 @@ const Navbar = () => {
                 }
                 {toggleMenu && (
                     <div className="app_navbar-menu_container scale-up-center">
-                        <div className="app_navbar-menu_container-links_sign">
-                            <button type="button">Sign in</button>
+                        <div className="app_navbar-menu_container-links_sign" >
+                            <a href="/signin" className='p_opensans'>
+                                <button type="button">Sign in</button>
+                            </a>
                         </div>
                         <div className="app_navbar-menu_container-links">
 
                             <li className='p_opensans'><a href="/">Home</a></li>
                             <li className='p_opensans'><a href="#about">About</a></li>
-                            <li className='p_opensans'><a href="#beadstype">Beads Type</a></li>
+                            <li className='p_opensans'><a href="/shop">Beads Type</a></li>
                             <li className='p_opensans'><a href="#product">Beads Product</a></li>
                             <li className='p_opensans'><a href="/contact">Contact Us</a></li>
 

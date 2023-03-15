@@ -1,79 +1,85 @@
 import React from 'react';
 import './contact.css';
+import { FaFacebook } from 'react-icons/fa';
+import { AiFillTwitterCircle, AiOutlineCustomerService } from 'react-icons/ai';
+import { ImYoutube2 } from 'react-icons/im';
+import { BsInstagram, BsPhoneVibrate } from 'react-icons/bs';
+import { HiOutlineCursorClick, HiOutlineMail } from 'react-icons/hi';
+import { GrLocation } from 'react-icons/gr';
+import { GiTalk } from 'react-icons/gi';
 
 const Contact = () => {
     return (
 
         <div class="contact-container" id="/contact">
             <div class="main-title">
-                <h2>Contact <span>Me</span> <span class="bg-text">My contact</span></h2>
+                <h2>Contact <span>Us</span> <span class="bg-text">Our contact</span></h2>
             </div>
             <div class="contact-content-con">
                 <div class="left-contact">
-                    <h4>Contact me here</h4>
+                    <h4>Contact us</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        Please call or email us for immediate answers to questions regarding orders and shipping.
                     </p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Location</span>
+                                <GrLocation color='black' size={20} />
+                                <span>Location:</span>
                             </div>
                             <p>
-                                : London, united Kingdom
+                                Texas, United States
                             </p>
                         </div>
                         <div class="contact-item">
                             <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email</span>
+                                <HiOutlineMail color='black' size={20} />
+                                <span>Email:</span>
                             </div>
                             <p>
-                                <span>: maclinzuniversal@gmail.com</span>
+                                <span>info@beadsworld.com</span>
                             </p>
                         </div>
                         <div class="contact-item">
                             <div class="icon">
-                                <i class="fas fa-user-graduate"></i>
-                                <span>Education</span>
+                                <AiOutlineCustomerService color='black' size={20} />
+                                <span>Customer Service:</span>
                             </div>
                             <p>
-                                <span>: Sussex University, East Sussex</span>
+                                <span>800-123-4567</span>
                             </p>
                         </div>
                         <div class="contact-item">
                             <div class="icon">
-                                <i class="fas fa-user-graduate"></i>
-                                <span>Mobile Number</span>
+                                <BsPhoneVibrate size={20} />
+                                <span>Mobile Number:</span>
                             </div>
                             <p>
-                                <span>: 07522670617</span>
+                                <span>123-456-7890</span>
                             </p>
                         </div>
                         <div class="contact-item">
                             <div class="icon">
-                                <i class="fas fa-globe-africa"></i>
-                                <span>Languages</span>
+                                <GiTalk size={20} />
+                                <span>Languages:</span>
                             </div>
                             <p>
-                                <span>: Afrikaans, English, Spanish</span>
+                                <span>English, Chinese</span>
                             </p>
                         </div>
                         <div class="contact-icons">
                             <div class="contact-icon">
                                 <a href="www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <FaFacebook color='rgb(47,83,149)' size={37} />
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
+                                    <AiFillTwitterCircle color='rgb(29, 155, 240)' size={37} />
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
+                                    <ImYoutube2 color='red' size={36} />
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+                                    <BsInstagram color='rgb(219, 117, 241)' size={30} />
                                 </a>
                             </div>
                         </div>
@@ -93,8 +99,8 @@ const Contact = () => {
                         </div>
                         <div class="submit-btn">
                             <a href="#" class="main-btn">
-                                <span class="btn-text">Download CV</span>
-                                <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                <span class="btn-text">Submit</span>
+                                <span class="btn-icon"><HiOutlineCursorClick color='white' size={27} /></span>
                             </a>
                         </div>
 
@@ -107,4 +113,3 @@ const Contact = () => {
 }
 
 export default Contact
-

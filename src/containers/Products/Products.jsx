@@ -12,6 +12,10 @@ const Products = () => {
                     <img src={images.set} alt="Summer seedbeads jewelry set" />
                     <p>Summer seedbeads jewelry set</p>
                 </div >
+                <div className="app_set" >
+                    <img src={images.blackpearlset} alt="Black Pearl Set" />
+                    <p>Black Pearl Set</p>
+                </div >
             </div >
             <div className='app_product-necklace_title'>Beads Necklace</div>
             <div className="app_product-necklace">
