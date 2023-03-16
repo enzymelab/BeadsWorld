@@ -1,4 +1,4 @@
-.app_signin {
+.app_signup {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,12 +8,19 @@
     padding: 1rem 2rem;
 }
 
-.app_signin-user {
+.app_signup-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+}
+
+.app_signup-info {
     display: flex;
     flex-direction: column;
 }
 
-.app_signin-icon {
+.app_signup-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +28,7 @@
     margin-bottom: 4rem;
 }
 
-.app_signin input {
+.app_signup input {
     flex: 1;
     height: 40px;
     width: 400px;
@@ -33,33 +40,37 @@
     margin: 10px;
 }
 
-.app_signin-checkbox input {
+.app_signup-checkbox span {
+    color: rgb(35, 182, 250);
+}
+
+.app_signup-checkbox input {
     width: 20px !important;
     height: 20px;
 }
 
-.app_signin-checkbox input[type=checkbox] {
+.app_signup-checkbox input[type=checkbox] {
     accent-color: red;
 }
 
-.app_signin-login {
+.app_signup-login {
     display: flex;
     align-items: center;
 }
 
-.app_signin-login a {
+.app_signup-login a {
     margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s ease;
 }
 
 
-.app_signin-login button:hover {
+.app_signup-login button:hover {
     background-color: var(--color-hover);
 
 }
 
-.app_signin-login button {
+.app_signup-login button {
     padding: 0.5rem 1rem;
     width: 250px;
     margin-top: 3rem;
@@ -75,25 +86,36 @@
     cursor: pointer;
 }
 
-.app_signin p {
+.app_signup p {
     text-decoration: underline;
     margin-top: 1rem;
     margin-left: 2rem;
 }
 
-.app_signin_choice {
+.app_signup_choice {
     display: flex;
     justify-content: space-between;
 }
 
 @media screen and (max-width: 550px) {
-    .app_signin input {
+    .app_signup input {
         width: 250px;
 
     }
 
-    .app_signin_choice {
-        display: flex;
-        flex-direction: column;
+    .app_signup-icon p {
+        font-size: 14px;
+    }
+
+    .app_signup-user {
+        width: 250px;
+    }
+
+    .app_signup-user input {
+        width: 115px;
+    }
+
+    .app_signup-checkbox label {
+        font-size: 12px;
     }
 }

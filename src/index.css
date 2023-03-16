@@ -11,8 +11,8 @@
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
   --color-hover: rgb(53, 214, 48);
-  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-  --gradient-bar: linear-gradient(89.97deg, #F49867 1.84%, #bbeb10 102.67%);
+  --gradient-text: linear-gradient(89.97deg, #6b1ebe 1.84%, #ee5c5c 102.67%);
+  --gradient-bar: linear-gradient(89.97deg, #F49867 1.84%, #cdf051 102.67%);
   --gradient-socail: linear-gradient(89.97deg, #bbeb10 1.84%, #fff 102.67%);
 }
 
@@ -27,6 +27,8 @@ a {
   color: unset;
   text-decoration: none;
 }
+
+
 
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -57,7 +59,7 @@ a {
   }
 }
 
-.gradient_text {
+.gradient_bg {
   background: -moz-radial-gradient(circle at 15% 50%, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
 
   /* safari 5.1+,chrome 10+ */

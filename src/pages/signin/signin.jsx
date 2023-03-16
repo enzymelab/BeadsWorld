@@ -29,7 +29,9 @@ const Signin = () => {
                     <button type="button">Login &nbsp;&nbsp;In</button>
                 </a>
             </div>
-            <div>
+            <div className='app_signin_choice'>
+                <a href="/signup">
+                    <p>Don't have an account?</p></a>
                 <p>Forgot Username?</p>
                 <p>Forgot Password?</p>
             </div>

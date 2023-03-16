@@ -1,0 +1,52 @@
+.app_diy h1,
+.app_diy p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+
+}
+
+.gradient-text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.app_diy-Vedio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+
+.app_diy-Vedio iframe {
+    padding: 2rem 2rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+    .app_diy-Vedio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .app_diy-Vedio iframe {
+        width: 90%;
+        height: 90%;
+    }
+
+    .app_diy h1 {
+        font-size: 22px;
+    }
+
+    .app_diy h1,
+    .app_diy p {
+
+        margin: 1rem;
+
+    }
+}

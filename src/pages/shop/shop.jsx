@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 import Products from '../../constants/data';
-import Product from './product';
-import './shop.css';
+import { Product } from "./product";
+import "./shop.css";
 
+export const Shop = () => {
+  return (
+    <div className="shop">
+      <div className="shopTitle">
+        <h1>Beads Shop</h1>
+      </div>
 
-const Shop = () => {
-    return (
-        <div className='app_shop'>
-            <div className='app_shop-title'>
-                <h1>Beads Shop</h1>
-            </div>
-            <div className="app_shop-products">
-                {Products.map((product) =>
-                    <Product data={product} />)}</div>
-        </div>
-    )
-}
-
-export default Shop
+      <div className="products">
+        {Products.map((product) => (
+          <Product data={product} />
+        ))}
+      </div>
+    </div>
+  );
+};

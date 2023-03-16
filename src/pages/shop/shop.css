@@ -1,54 +1,84 @@
-.app_shop-title {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 40px;
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
 }
 
-.app_shop-products {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  place-items: center;
 }
 
 .product {
-    border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .product img {
-    width: 200px;
+  width: 200px;
+  height: 200px;
 }
 
-.product_desc {
-    text-align: center;
+.product .description {
+  text-align: center;
 }
 
 .product:hover {
-    transition: 0.3s ease-in;
-    cursor: pointer;
+  transition: 0.3s ease-in;
+  cursor: pointer;
 }
 
 .addToCartBttn {
-    background-color: transparent;
-    border: 2px solid rgb(19, 19, 19);
-    min-width: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 15px;
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
 }
 
 .addToCartBttn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    cursor: pointer;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .shopTitle {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .products {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-items: center;
+  }
+
+  .product {
+    margin: 0;
+    height: 250px;
+  }
+
+  .product img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .product .description p {
+    font-size: 12px;
+  }
 }

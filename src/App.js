@@ -13,26 +13,29 @@ import Contact from './pages/contact/contact';
 import { Routes, Route } from 'react-router-dom';
 import Signin from './pages/signin/signin';
 import NewFooter from './components/footer/footer';
-import Shop from './pages/shop/shop';
-import Cart from './pages/cart/cart';
+import { Shop } from './pages/shop/shop';
+import { Cart } from './pages/cart/cart';
+import Signup from './pages/signup/signup';
+import Diyidea from './pages/diyIdea/diyidea';
 import { ShopContextProvider } from './context/shopcontext';
+
 const App = () => {
   return (
     <div className='app'>
       <ShopContextProvider>
 
-
         <Navbar />
         <Header />
         <Routes>
           <Route path='/contact' element={<Contact />} />
+          <Route path='/diyidea' element={<Diyidea />} />
           <Route path='/signin' element={<Signin />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path='/' element={<><AboutUs /><BeadsType /><Products /><Intro /><Footer /></>} />
-          <Route path='/cart' element={<Cart />} />
           <Route path='/shop' element={<Shop />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
         <NewFooter />
-
 
       </ShopContextProvider>
     </div>

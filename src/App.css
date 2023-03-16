@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.gradient_text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clop: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 

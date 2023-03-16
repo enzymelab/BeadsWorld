@@ -3,6 +3,7 @@ import './Header.css';
 import { BsSearchHeart } from 'react-icons/bs';
 import { HiShoppingBag } from 'react-icons/hi';
 import { BsHearts } from 'react-icons/bs';
+import { Link, link } from "react-router-dom";
 const Header = () => {
     return (
         <div className="app_header">
@@ -19,8 +20,10 @@ const Header = () => {
                     <p>Wishlist</p>
                 </div>
                 <div className="app_header-cart">
-                    <HiShoppingBag size={27} />
-                    <p>Cart</p>
+                    <Link to="/cart">
+                        <HiShoppingBag size={27} />
+                        <p>Cart</p></Link>
+
                 </div>
             </div>
         </div>

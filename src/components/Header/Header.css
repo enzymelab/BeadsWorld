@@ -92,7 +92,7 @@
     justify-content: space-between;
 }
 
-.app_header-cart {
+.app_header-cart a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
